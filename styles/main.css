@@ -1,5 +1,50 @@
+/*
+1. Pocisionamiento
+2. Modelo de caja
+3. Tipografia
+4. Temas visuales (shadow box, border radius)
+5. Miscelanous (otros)
+*/
+:root {
+    --color-primary: #ACD9B2;
+    --background:  #FFFFFF;
+    --font-letter: #0000;
+
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Helvetica' sans-serif;
+}
+/* Maquetación del HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 30vh;
+    border: 1px solid red;
+    padding-bottom: 50px;
+}
+.logo {
+    width: 150px;
+}
+.main {
+    width: 100vw;
+    height: 70vh;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(1rem, 0.6);
 }
