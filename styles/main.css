@@ -11,6 +11,20 @@
     --font-letter: #0000;
 
 }
+
+/* Átomos (reutilizar)*/
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* Botones*/
+.input {
+    width: 80vw;
+    height: 42px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -27,24 +41,74 @@ html {
     align-items: flex-end;
     width: 100vw;
     height: 30vh;
-    border: 1px solid red;
     padding-bottom: 50px;
 }
 .logo {
     width: 150px;
 }
+/* Maquetación seccion MAIN */
 .main {
+    font-size: 1.4rem;
     width: 100vw;
     height: 70vh;
-    border: 1px solid blue;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     padding: 10px;
 }
+/* Maquetación seccion Login*/
 .login-form {
     display: flex;
     flex-direction: column;
-    font-size: calc(1rem, 0.6);
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.input-email {
+    width: 80vw;
+    height: 42px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.input-password {
+    width: 80vw;
+    height: 42px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.input-submit {
+    width: 80vw;
+    height: 42px;
+    background: var(--color-primary);
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+.login-reset-password a{
+    color: black;
+}
+.login-sign {
+    margin-top: 50px;
+    
+}
+.login-sign-button {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 12px;
+    width: 80vw;
+    height: 43px;
+    padding: 10px 120px;
+}
+/* Maquetación seccion Login*/
+
+/* Maquetacion password recovery 1*/
+.password-h1 {
+    margin-bottom: 20px;
+}
+.password-p {
+    margin-bottom: 20px;
+}
+.password-form {
+    display: flex;
+    flex-direction: column;
 }
